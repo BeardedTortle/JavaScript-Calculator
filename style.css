@@ -3,3 +3,10 @@
   -moz-appearance:textfield;
   margin: 0; 
 }
+
+#digitsTable{
+  
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-end: 3fr;
+}

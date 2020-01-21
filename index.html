@@ -11,16 +11,31 @@
     <div id="container">
         <div id="calculator">
             <div id="displayScreen">
-                <input type="text" name="display" id="display" placeholder="enter a number">
+                <input type="number" name="display" id="display" placeholder="enter a number">
                 <button type="reset" id="backspace">Backspace</button>
             </div>
-
+            <div id="digitsTable">
+                <button class="digits" id='0button'>0</button>
+                <button class="digits"id='1button'>1</button>
+                <button class="digits"id='2button'>2</button>
+                <button class="digits"id='3button'>3</button>
+                <button class="digits"id='4button'>4</button>
+                <button class="digits"id='5button'>5</button>
+                <button class="digits"id='6button'>6</button>
+                <button class="digits"id='7button'>7</button>
+                <button class="digits"id='8button'>8</button>
+                <button class="digits"id='9button'>9</button>
+            </div>
             <div id="operandsTable">
-                <button id="addButton" class="operandButton">+</button>
-                <button id="subtractButton" class="operandButton">-</button>
-                <button id="multiplyButton" class="operandButton">*</button>
-                <button id="divideButton" class="operandButton">/</button>
-                <button id="equalsButton" class="operandButton">=</button>
+                <button id="addButton" class="operandButton" onclick='sumFunction()'>+</button>
+                <button id="subtractButton" class="operandButton"
+                onclick='subFunction()'>-</button>
+                <button id="multiplyButton" class="operandButton"
+                onclick='multFunction()'>*</button>
+                <button id="divideButton" class="operandButton"
+                onclick='divideFunction()'>/</button>
+                <button id="equalsButton" class="operandButton"
+                onclick='equalsFunction()'>=</button>
             </div>
 
         </div>
