@@ -18,3 +18,7 @@ function sumFunction() {
     document.querySelector('input').value = result;
     
 }
+
+document.querySelectorAll('digits').addEventListener('click', function(e){
+    document.querySelector('input').value = 1;
+})

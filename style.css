@@ -2,11 +2,26 @@
   -webkit-appearance: none; 
   -moz-appearance:textfield;
   margin: 0; 
+  width: 80%;
+}
+
+#container {
+  background-color: #eee;
+  margin: auto;
+  padding: 2em;
+  text-align: center;
 }
 
 #digitsTable{
   
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-row-end: 3fr;
+  
+}
+#operandTable{
+  
+}
+.operandButton{
+  display: block;
+  
 }
