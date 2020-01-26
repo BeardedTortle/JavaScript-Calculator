@@ -1,15 +1,13 @@
-#display { 
-  -webkit-appearance: none; 
-  -moz-appearance:textfield;
-  margin: 0; 
-  width: 80%;
-}
-
 #container {
   background-color: #eee;
   margin: auto;
   padding: 2em;
   text-align: center;
+}
+#displayScreen { 
+  margin: 0; 
+  background-color: white;
+  border: solid black 1px;
 }
 
 #digitsTable{

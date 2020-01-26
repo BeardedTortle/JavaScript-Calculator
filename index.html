@@ -11,21 +11,25 @@
     <div id="container">
         <div id="calculator">
             <div id="displayScreen">
-                <input type="number" name="display" id="display" placeholder="enter a number">
-                <button type="reset" id="backspace">Backspace</button>
+                <div id="history">0</div>
+                <div id="currentInput"> </div>
             </div>
+            <div id="buttonsTable">
+                <button type="reset" id="backspace">Backspace</button>
             <div id="digitsTable">
-                <button class="digits" id='0button'>0</button>
+                <button class="digits"id='0button'>0</button>
                 <button class="digits"id='1button'>1</button>
                 <button class="digits"id='2button'>2</button>
                 <button class="digits"id='3button'>3</button>
+
                 <button class="digits"id='4button'>4</button>
                 <button class="digits"id='5button'>5</button>
                 <button class="digits"id='6button'>6</button>
                 <button class="digits"id='7button'>7</button>
+                
                 <button class="digits"id='8button'>8</button>
                 <button class="digits"id='9button'>9</button>
-                <button class="digits" id="decimal">.</button>
+                <button class="digits"id="decimal">.</button>
             </div>
             <div id="operandTable">
                 <button id="addButton" class="operandButton" onclick='sumFunction()'>+</button>
@@ -38,7 +42,7 @@
                 <button id="equalsButton" class="operandButton"
                 onclick='equalsFunction()'>=</button>
             </div>
-
+        </div>
         </div>
     </div>
 </body>
