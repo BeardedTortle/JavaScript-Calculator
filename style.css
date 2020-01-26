@@ -9,16 +9,16 @@
   background-color: white;
   border: solid black 1px;
 }
-
+#currentInput {
+  height: 5em;
+}
 #digitsTable{
   
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
   
 }
-#operandTable{
-  
-}
+
 .operandButton{
   display: block;
   

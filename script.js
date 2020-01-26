@@ -9,22 +9,16 @@ document.querySelectorAll('.digits').forEach(item => {
     });
 });
 
-function sumFunction() {
-     
-}
 
-function subFunction() {
 
-}
+document.querySelectorAll('.operandButton').forEach(item => {
+    item.addEventListener('click', e => {
+        let operand = item.innerHTML;
+        let value = document.getElementById('currentInput').innerHTML;
+        
 
-function multFunction() {
-
-}
-
-function divFunction() {
-
-}
-
-function equalsFunction() {
-
-}
+        document.getElementById('history').innerHTML += `${value} ${operand} `;
+        document.getElementById('currentInput').innerHTML = '';
+        console.log(operand)
+    });
+});

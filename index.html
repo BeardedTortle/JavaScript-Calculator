@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>JavaScript Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="container">
         <div id="calculator">
             <div id="displayScreen">
-                <div id="history">0</div>
+                <div id="history"></div>
                 <div id="currentInput"> </div>
             </div>
             <div id="buttonsTable">
@@ -26,21 +26,17 @@
                 <button class="digits"id='5button'>5</button>
                 <button class="digits"id='6button'>6</button>
                 <button class="digits"id='7button'>7</button>
-                
+
                 <button class="digits"id='8button'>8</button>
                 <button class="digits"id='9button'>9</button>
                 <button class="digits"id="decimal">.</button>
             </div>
             <div id="operandTable">
-                <button id="addButton" class="operandButton" onclick='sumFunction()'>+</button>
-                <button id="subtractButton" class="operandButton"
-                onclick='subFunction()'>-</button>
-                <button id="multiplyButton" class="operandButton"
-                onclick='multFunction()'>*</button>
-                <button id="divideButton" class="operandButton"
-                onclick='divideFunction()'>/</button>
-                <button id="equalsButton" class="operandButton"
-                onclick='equalsFunction()'>=</button>
+                <button id="addButton" class="operandButton">+</button>
+                <button id="subtractButton" class="operandButton">-</button>
+                <button id="multiplyButton" class="operandButton">*</button>
+                <button id="divideButton" class="operandButton">/</button>
+                <button id="equalsButton" class="operandButton">=</button>
             </div>
         </div>
         </div>
