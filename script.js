@@ -36,7 +36,12 @@ function clearEntry() {
 
 operandButtons.forEach(item => {
     item.addEventListener('click', e => {
-        
+        if(displayInput.innerHTML === ''){
+            
+            operation = item.innerHTML;
+            history.innerHTML = `${result} ${operation}`
+            return;
+        }else {
         if(item.innerHTML === '='){
         values.push(parseInt(displayInput.innerHTML));
         operate();
@@ -48,7 +53,7 @@ operandButtons.forEach(item => {
             if(values.length < 2){
         operation = item.innerHTML;
         values.push(parseInt(displayInput.innerHTML));
-        history.innerHTML += ` ${displayInput.innerHTML} ${item.innerHTML}`
+        history.innerHTML += ` ${displayInput.innerHTML} ${operation}`
         displayInput.innerHTML = '';
        
         console.log(values)
@@ -57,7 +62,7 @@ operandButtons.forEach(item => {
             console.log(values)
             history.innerHTML = `${result} ${item.innerHTML}`;
             displayInput.innerHTML = '';
-        }}
+        }}}
 
         
     });
