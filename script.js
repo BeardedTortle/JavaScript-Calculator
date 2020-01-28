@@ -4,6 +4,7 @@ const displayInput = document.querySelector('#currentInput');
 const ACBUTTON = document.querySelector('#AC');
 const operandButtons = document.querySelectorAll('.operandButton');
 const history = document.querySelector('#history');
+const BACKBUTTON = document.querySelector('#CE');
 let operation = '';
 let values = [];
 let result = 0; 
@@ -27,7 +28,7 @@ digitButtons.forEach(item => {
     })
 });
 
-
+BACKBUTTON.addEventListener('click', clearEntry);
 function clearEntry() {
     displayInput.innerHTML = '';
     decimalButton.disabled = '';
