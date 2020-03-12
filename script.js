@@ -1,10 +1,10 @@
 const digitButtons = document.querySelectorAll('.digits');
-const decimalButton = document.querySelector('#decimal');
-const displayInput = document.querySelector('#currentInput');
-const ACBUTTON = document.querySelector('#AC');
+const decimalButton = document.querySelector('#dot');
+const displayInput = document.querySelector('#display');
+const ACBUTTON = document.querySelector('#clear');
 const operandButtons = document.querySelectorAll('.operandButton');
-const history = document.querySelector('#history');
-const BACKBUTTON = document.querySelector('#CE');
+const history = document.querySelector('#cdisplay');
+const BACKBUTTON = document.querySelector('#clearInput');
 let operation = '';
 let values = [];
 let result = 0; 
@@ -21,7 +21,7 @@ function allClear() {
 digitButtons.forEach(item => {
     item.addEventListener('click', e => {
         if(item === decimalButton){
-           
+           console.log('dot pressed')
             decimalButton.disabled = 'true';
         }
         displayInput.innerHTML += item.innerHTML;

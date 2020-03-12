@@ -1,47 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>JavaScript Calculator</title>
+<html>
+	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Tinos" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div id="container">
-        <div id="calculator">
-            <div id="displayScreen">
-                <div id="history"></div>
-                <div id="currentInput"> </div>
-            </div>
-            <div id="buttonsTable">
-                <button id="CE">CE</button>
-                <button type="reset" id="AC">AC</button>
-            <div id="digitsTable">
-                <button class="digits"id='0button'>0</button>
-                <button class="digits"id='1button'>1</button>
-                <button class="digits"id='2button'>2</button>
-                <button class="digits"id='3button'>3</button>
-
-                <button class="digits"id='4button'>4</button>
-                <button class="digits"id='5button'>5</button>
-                <button class="digits"id='6button'>6</button>
-                <button class="digits"id='7button'>7</button>
-
-                <button class="digits"id='8button'>8</button>
-                <button class="digits"id='9button'>9</button>
-                <button class="digits"id="decimal">.</button>
-            </div>
-            <div id="operandTable">
-                <button id="addButton" class="operandButton">+</button>
-                <button id="subtractButton" class="operandButton">-</button>
-                <button id="multiplyButton" class="operandButton">*</button>
-                <button id="divideButton" class="operandButton">/</button>
-                <button id="equalsButton" class="operandButton">=</button>
-            </div>
-        </div>
-        </div>
+	<body>
+	<div id="root">
+		<label id="display"></label>
+		<label id="cdisplay" ></label>
+        <button id="clear">AC </button>
+        <button id="clearInput">CE</button>
+		<button id="divide"class="operandButton">/</button>
+		<button id="multiply"class="operandButton">*</button>
+		<button id="seven"class="digits">7</button>
+		<button id="eight"class="digits">8</button>
+		<button id="nine"class="digits">9</button>
+		<button id="minus"class="operandButton">-</button>
+		<button id="four"class="digits">4</button>
+		<button id="five"class="digits">5</button>
+		<button id="six"class="digits">6</button>
+		<button id="plus"class="operandButton">+</button>
+		<button id="one"class="digits">1</button>
+		<button id="two"class="digits">2</button>
+		<button id="three"class="digits">3</button>
+		<button id="zero"class="digits">0</button>
+		<button id="dot"class="digits">.</button>
+		<button id="equal"class="operandButton">=</button>
+		
     </div>
-</body>
-<script src='script.js'></script>
-</html>
+    <script src="script.js"></script>
+	</body>
+	</html>
