@@ -193,3 +193,22 @@ document.addEventListener('keypress', key =>{
         
     }
 })
+
+document.addEventListener("keydown", KeyCheck);  //or however you are calling your method
+function KeyCheck(event)
+{
+   var KeyID = event.keyCode;
+   switch(KeyID)
+   {
+      case 8:
+            calculator.delete()
+            calculator.updateDisplay()
+      break; 
+      case 46:
+            calculator.clear()
+            calculator.updateDisplay()
+      break;
+      default:
+      return;
+   }
+}
