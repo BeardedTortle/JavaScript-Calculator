@@ -20,13 +20,13 @@ class Calculator {
     chooseOperation(operation){
         if (this.currentOperand === '') return
         if (this.previousOperand !== '') {
-            this.compute()
+            this.operate()
         }
         this.operation = operation
         this.previousOperand = this.currentOperand
         this.currentOperand = ''
     }
-    compute(){
+    operate(){
         console.log('computing')
         let computation 
         const prev = parseFloat(this.previousOperand)
@@ -105,7 +105,7 @@ operationButtons.forEach(button => {
 })
 
 equalsButton.addEventListener('click', button => {
-    calculator.compute()
+    calculator.operate()
     calculator.updateDisplay()
 })
 
@@ -116,4 +116,80 @@ allClearButton.addEventListener('click', button => {
 deleteButton.addEventListener('click', button => {
     calculator.delete()
     calculator.updateDisplay()
+})
+
+
+//Keyboard support
+document.addEventListener('keypress', key =>{
+    let code = key.keyCode
+    console.log(key.keyCode)
+    switch (code){
+        case 49:
+            calculator.appendNumber(String.fromCharCode(key.keyCode))
+            calculator.updateDisplay()
+            break
+        case 50:
+            calculator.appendNumber(String.fromCharCode(key.keyCode))
+            calculator.updateDisplay()
+            break
+        case 51:
+            calculator.appendNumber(String.fromCharCode(key.keyCode))
+            calculator.updateDisplay()
+            break
+        case 52:
+            calculator.appendNumber(String.fromCharCode(key.keyCode))
+            calculator.updateDisplay()
+            break    
+        case 53:
+            calculator.appendNumber(String.fromCharCode(key.keyCode))
+            calculator.updateDisplay()
+            break
+        case 54:
+            calculator.appendNumber(String.fromCharCode(key.keyCode))
+            calculator.updateDisplay()
+            break
+        case 55:
+            calculator.appendNumber(String.fromCharCode(key.keyCode))
+            calculator.updateDisplay()
+            break
+        case 56:
+            calculator.appendNumber(String.fromCharCode(key.keyCode))
+            calculator.updateDisplay()
+            break
+        case 57:
+            calculator.appendNumber(String.fromCharCode(key.keyCode))
+            calculator.updateDisplay()
+            break
+        case 48:
+            calculator.appendNumber(String.fromCharCode(key.keyCode))
+            calculator.updateDisplay()
+            break
+        case 46:
+            calculator.appendNumber(String.fromCharCode(key.keyCode))
+            calculator.updateDisplay()
+            break
+        case 47:
+            calculator.chooseOperation(String.fromCharCode(key.keyCode))
+            calculator.updateDisplay()
+            break     
+        case 42:
+            calculator.chooseOperation(String.fromCharCode(key.keyCode))
+            calculator.updateDisplay()
+            break     
+        case 45:
+            calculator.chooseOperation(String.fromCharCode(key.keyCode))
+            calculator.updateDisplay()
+            break         
+        case 43:
+            calculator.chooseOperation(String.fromCharCode(key.keyCode))
+            calculator.updateDisplay()
+            break        
+        case 13 || 43:
+            calculator.operate()
+            calculator.updateDisplay()
+            break
+        default: 
+            return
+        
+    }
 })
